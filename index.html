@@ -4,34 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel Chukwuemeka Tutorials: Math, Science, and Technology</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', 'Bell MT', 'David', 'Georgia', 'Book Antiqua';
-            font-size: 25px;
-            line-height: 2.5;
-            margin: 40px;
-            background: #f9f9f9;
-        }
+    <meta name="description"
+        content="Explore interactive tutorials and presentations in Mathematics, Science, and Technology by Samuel Chukwuemeka.">
+    <title>Samuel Chukwuemeka Tutorials | Math, Science, & Technology</title>
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-        li {
-            margin: 10px 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: darkblue;
-        }
-
-        a:hover {
-            color: red;
-        }
-    </style>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
 
     <!-- Favicons -->
     <!-- 1. Small standard size for browser tabs -->
@@ -45,27 +28,411 @@
 
     <!-- 4. Pure fallback for old browsers (just put a 'favicon.ico' file in your root folder) -->
     <!-- No HTML tag required if the file is named favicon.ico and sits in your main folder! -->
+
 </head>
 
 <body>
-    <h1>Mathematics and Science Topics</h1>
-    <p>These websites are some of my websites under this GitHub account.</p>
-    <ul>
-        <li><a href="https://samuelchukwuemeka.github.io/algebra-transformations/">Algebra Transformations</a></li>
-        <li><a href="https://samuelchukwuemeka.github.io/descriptive-statistics/">Descriptive Statistics</a></li>
-        <li><a href="https://samuelchukwuemeka.github.io/exponents-logarithms/">Exponents and Logarithms</a></li>
-        <li><a href="https://samuelchukwuemeka.github.io/exponential-growth/">Exponential Growth</a></li>
-        <li><a href="https://samuelchukwuemeka.github.io/exponential-decay/">Exponential Decay</a></li>
-        <li><a href="https://samuelchukwuemeka.github.io/forecastingmodels/">Forecasting Models</a></li>
-        <li><a href="https://samuelchukwuemeka.github.io/heat-energy/">Heat Energy</a></li>
-        <li><a href="https://samuelchukwuemeka.github.io/inequalities/">Inequalities</a></li>
-        <li><a href="https://samuelchukwuemeka.github.io/matrix-algebra/">Matrix Algebra</a></li>
-        <li><a href="https://samuelchukwuemeka.github.io/modular-arithmetic/">Modular Arithmetic and Algorithms</a></li>
-        <li><a href="https://samuelchukwuemeka.github.io/polygonsandcircles/">Polygons and Circles</a></li>
-        <li><a href="https://samuelchukwuemeka.github.io/polynomials/">Polynomials</a></li>
-        <li><a href="https://samuelchukwuemeka.github.io/rational-functions/">Rational Functions</a></li>
-        <li><a href="https://github.com/samuelchukwuemeka/linear-systems">Linear Systems</a></li>
-    </ul>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <h1>Samuel Dominic Chukwuemeka Tutorials</h1>
+            <p class="quote">
+                <q>The <b>Joy</b> of the <b>Teacher</b> is the <b>Success</b> of the <b>Students.</b></q>
+                - Samuel Chukwuemeka
+            </p>
+
+            <div class="search-box">
+                <input type="text" id="searchInput"
+                    placeholder="Search topics (e.g., Algebra, Statistics, Trigonometry)..." aria-label="Search topics">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section aria-labelledby="section-title">
+            <h2 id="section-title" class="section-title">Featured Topics & Presentations</h2>
+
+            <nav aria-label="Tutorial Links">
+                <ul class="cards-grid" id="topicsGrid">
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/algebra-transformations/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">📐</div>
+                            <div class="card-body">
+                                <h3>Algebra Transformations</h3>
+                                <p>Shifts, stretches, and reflections of algebraic functions.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/chemical-reactions/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">🧪</div>
+                            <div class="card-body">
+                                <h3>Chemical Reactions</h3>
+                                <p>Explorations of chemical bonding and reaction equations.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/complex-numbers/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">𝑶</div>
+                            <div class="card-body">
+                                <h3>Complex Numbers</h3>
+                                <p>Real and imaginary numbers, operations, and complex plane representation.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/Presentations/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">🎤</div>
+                            <div class="card-body">
+                                <h3>Conference Presentations</h3>
+                                <p>Academic slides and conference research topics.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/correlation-regression/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">📈</div>
+                            <div class="card-body">
+                                <h3>Correlation and Regression</h3>
+                                <p>Relationships between variables and scatter plots.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/cryptology/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">🔐</div>
+                            <div class="card-body">
+                                <h3>Cryptology</h3>
+                                <p>Encryption, decryption techniques, and secure communication.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/descriptive-statistics/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">📊</div>
+                            <div class="card-body">
+                                <h3>Descriptive Statistics</h3>
+                                <p>Data summarization, central tendency, and dispersion.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/exponents-logarithms/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">🏷️</div>
+                            <div class="card-body">
+                                <h3>Exponents and Logarithms</h3>
+                                <p>Properties, transformations, and log operations.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/exponential-decay/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">📉</div>
+                            <div class="card-body">
+                                <h3>Exponential Decay</h3>
+                                <p>Half-life models and decaying rate systems.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/exponential-growth/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">🚀</div>
+                            <div class="card-body">
+                                <h3>Exponential Growth</h3>
+                                <p>Compounding interest, population growth, and functions.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/expressions-equations/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">🧮</div>
+                            <div class="card-body">
+                                <h3>Expressions and Equations</h3>
+                                <p>Simplifying expressions, solving algebraic equations, and operations.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/financial-mathematics/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">💰</div>
+                            <div class="card-body">
+                                <h3>Financial Mathematics</h3>
+                                <p>Interest rates, annuities, loans, and investment growth models.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/forecastingmodels/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">🔮</div>
+                            <div class="card-body">
+                                <h3>Forecasting Models</h3>
+                                <p>Predictive analytics and time-series estimations.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/fractions-decimals-percents/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">🔢</div>
+                            <div class="card-body">
+                                <h3>Fractions, Decimals, and Percents</h3>
+                                <p>Conversions, operations, and numerical relationships.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/geometry-transformations/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">🔳</div>
+                            <div class="card-body">
+                                <h3>Geometry Transformations</h3>
+                                <p>Translations, rotations, reflections, and dilations.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/heat-energy/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">🔥</div>
+                            <div class="card-body">
+                                <h3>Heat Energy</h3>
+                                <p>Thermodynamics, heat transfer, and thermal physics.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/hypothesis-testing/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">🧪</div>
+                            <div class="card-body">
+                                <h3>Hypothesis Testing</h3>
+                                <p>Null vs. alternative hypotheses, p-values, and statistical significance.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/inequalities/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">⚖️</div>
+                            <div class="card-body">
+                                <h3>Inequalities</h3>
+                                <p>Linear, quadratic, and absolute value inequalities.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/inferential-statistics/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">📌</div>
+                            <div class="card-body">
+                                <h3>Inferential Statistics</h3>
+                                <p>Drawing conclusions from samples, estimations, and testing.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/linear-systems/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">📏</div>
+                            <div class="card-body">
+                                <h3>Linear Systems</h3>
+                                <p>Solving system equations via substitution & elimination.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/matrix-algebra/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">🧊</div>
+                            <div class="card-body">
+                                <h3>Matrix Algebra</h3>
+                                <p>Determinants, inverses, and vector transformations.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/measurements-units/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">📐</div>
+                            <div class="card-body">
+                                <h3>Measurements and Units</h3>
+                                <p>Unit conversions, SI system, and dimensional analysis.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/modular-arithmetic/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">💻</div>
+                            <div class="card-body">
+                                <h3>Modular Arithmetic and Algorithms</h3>
+                                <p>Clock arithmetic, cryptography basics, and logic steps.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/numbers/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">1️⃣</div>
+                            <div class="card-body">
+                                <h3>Numbers</h3>
+                                <p>Real numbers, integers, primes, and numerical properties.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/piecewise-functions/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">✂️</div>
+                            <div class="card-body">
+                                <h3>Piecewise Functions</h3>
+                                <p>Graphing and evaluating sub-function definitions across intervals.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/polygonsandcircles/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">⭕</div>
+                            <div class="card-body">
+                                <h3>Polygons and Circles</h3>
+                                <p>Geometric properties, angles, and area calculations.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/polynomials/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">🧬</div>
+                            <div class="card-body">
+                                <h3>Polynomials</h3>
+                                <p>Factoring, roots, and polynomial functions.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/probability-distributions/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">🎲</div>
+                            <div class="card-body">
+                                <h3>Probability Distributions</h3>
+                                <p>Uniform, Binomial, Normal, and Poisson probability models.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/rational-functions/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">➗</div>
+                            <div class="card-body">
+                                <h3>Rational Functions</h3>
+                                <p>Asymptotes, domain restrictions, and simplification.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/relations-functions/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">🔄</div>
+                            <div class="card-body">
+                                <h3>Relations and Functions</h3>
+                                <p>Domain, range, mappings, and function characteristics.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/sampling-distributions/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">📉</div>
+                            <div class="card-body">
+                                <h3>Sampling Distributions</h3>
+                                <p>Central Limit Theorem, sampling means, and proportions.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/set-theory/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">🔘</div>
+                            <div class="card-body">
+                                <h3>Set Theory</h3>
+                                <p>Venn diagrams, unions, intersections, and set operations.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card">
+                        <a href="https://samuelchukwuemeka.github.io/trigonometry/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="card-icon">📐</div>
+                            <div class="card-body">
+                                <h3>Trigonometry</h3>
+                                <p>Sine, cosine, identities, unit circle, and triangle solving.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                &copy; <a href="https://chukwuemekasamuel.com/portfolio.html">SamDom4Peace Designs</a>.
+                All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,212 @@
+/* Custom Design Tokens */
+:root {
+    --primary-color: #0f172a;
+    --accent-color: #2563eb;
+    --accent-hover: #1d4ed8;
+    --header-bg: cornsilk;
+    --header-text: #2d1810;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #334155;
+    --text-dark: #0f172a;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.12);
+    --radius: 12px;
+    --transition: all 0.25s ease-in-out;
+}
+
+/* Global Reset & Typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100%;
+}
+
+/* Hero Header with Cornsilk Background */
+.hero {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 56px 0 48px;
+    text-align: center;
+    border-bottom: 1px solid #ebd4b9;
+}
+
+.hero h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+    color: #1a0c06;
+}
+
+.nickname {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #8b4513;
+    margin-bottom: 12px;
+}
+
+.quote {
+    font-size: 1.2rem;
+    color: #4a2e1b;
+    max-width: 700px;
+    margin: 0 auto 32px;
+    line-height: 1.5;
+}
+
+/* Search Bar */
+.search-box {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 14px 22px;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: 2px solid #e0c5a8;
+    outline: none;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.search-box input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+    background-color: #ffffff;
+}
+
+/* Main Content Area */
+main {
+    flex: 1;
+    padding-top: 48px;
+    padding-bottom: 80px;
+    /* Generous spacing before the footer */
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 28px;
+}
+
+/* Grid Layout */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    list-style: none;
+}
+
+/* Card Component */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: #cbd5e1;
+}
+
+.card a {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+}
+
+.card-icon {
+    font-size: 1.8rem;
+    line-height: 1;
+    background-color: #eff6ff;
+    padding: 12px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.card-body h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+    transition: var(--transition);
+}
+
+.card:hover .card-body h3 {
+    color: var(--accent-color);
+}
+
+.card-body p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+/* Footer with Extra Spacing */
+footer {
+    background-color: cornsilk;
+    border-top: 1px solid var(--border-color);
+    padding: 36px 0;
+    margin-top: 40px; /* Added margin above footer */
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover{
+   color: var(--accent-color);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 640px) {
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .nickname {
+        font-size: 1.05rem;
+    }
+
+    .quote {
+        font-size: 0.95rem;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
